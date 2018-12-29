@@ -158,11 +158,11 @@ public class BRCurrency {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
                     case CURRENT_UNIT_PHOTONS:
-                        return "photons";
+                        return "nixtoshies";
                     case BRConstants.CURRENT_UNIT_LITES:
-                        return "lites";
+                        return "mNIX";
                     case BRConstants.CURRENT_UNIT_LITECOINS:
-                        return "LTC";
+                        return "NIX";
                 }
             }
         }
