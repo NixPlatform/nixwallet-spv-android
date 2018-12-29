@@ -14,7 +14,7 @@
         android:layout_height="@dimen/enter_pin_screen_logo_size"
         android:layout_marginBottom="16dp"
         android:gravity="center_horizontal"
-        android:src="@drawable/ltc_logo"
+        android:src="@drawable/nix_logo"
         app:layout_constraintBottom_toTopOf="@+id/enter_pin_label"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

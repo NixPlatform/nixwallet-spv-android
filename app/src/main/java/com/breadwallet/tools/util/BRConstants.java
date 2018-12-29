@@ -68,7 +68,7 @@ public class BRConstants {
     public static final String FEE_KB_PREFS = "feeKb";
     public static final String ECONOMY_FEE_KB_PREFS = "EconomyFeeKb";
     public static final String LITTLE_CIRCLE = "\u2022";
-    public static String SUPPORT_EMAIL = "support@loafwallet.com";
+    public static String SUPPORT_EMAIL = "contact@nixplatform.io";
 
     public static final int ONE_BITCOIN = 100000000;
     public static final int HUNDRED_BITS = 10000000;
@@ -108,8 +108,8 @@ public class BRConstants {
     public static final int CURRENT_UNIT_LITES = 1;
     public static final int CURRENT_UNIT_LITECOINS = 2;
 
-    public static final String litecoinLowercase = "\u0142";
-    public static final String litecoinUppercase = "\u0141";
+    public static final String litecoinLowercase = "mNIX";
+    public static final String litecoinUppercase = "NIX";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
@@ -142,11 +142,11 @@ public class BRConstants {
     public static final String wipeWallet = "wipe-wallet";
 
     // or https://twitter.com/loafwallet
-    public static final String TWITTER_LINK = "https://twitter.com/ltcfoundation";
-    public static final String REDDIT_LINK = "https://www.reddit.com/r/litecoin";
-    public static final String BLOG_LINK = "http://loafwallet.org";
+    public static final String TWITTER_LINK = "https://twitter.com/nixplatform";
+    public static final String REDDIT_LINK = "https://www.reddit.com/r/nixplatform";
+    public static final String BLOG_LINK = "http://nixplatform.io";
 
-    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "http://explorer.litecointools.com/tx/" :"https://insight.litecore.io/tx/";
+    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "https://blockchain.nixplatform.io/tx/" :"https://blockchain.nixplatform.io/tx/";
 
     private BRConstants() {
     }

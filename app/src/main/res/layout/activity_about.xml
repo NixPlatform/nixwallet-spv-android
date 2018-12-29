@@ -30,7 +30,7 @@
             android:layout_height="@dimen/standard_logo_size"
             android:layout_marginStart="26dp"
             android:layout_marginTop="26dp"
-            android:src="@drawable/ltc_logo" />
+            android:src="@drawable/nix_logo" />
 
     </RelativeLayout>
 
