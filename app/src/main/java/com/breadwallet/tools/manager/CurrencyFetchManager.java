@@ -96,7 +96,7 @@ public class CurrencyFetchManager {
                         JSONObject tmpObj = (JSONObject) arr.get(i);
                         tmp.name = tmpObj.getString("code");
                         tmp.code = tmpObj.getString("code");
-                        tmp.rate = (float) tmpObj.getDouble("n");
+                        tmp.rate = (float) tmpObj.getDouble("rate");
                         String selectedISO = BRSharedPrefs.getIso(context);
 //                        Log.e(TAG,"selectedISO: " + selectedISO);
                         if (tmp.code.equalsIgnoreCase(selectedISO)) {
@@ -194,14 +194,14 @@ public class CurrencyFetchManager {
     }
 
     public static JSONArray getBackUpJSonArray(Activity activity) {
-        String jsonString = callURL(activity, "https://bitpay.com/rates");
+        String jsonString = callURL(activity, "https://nixapi.netabuse.net/exchanges/fiat");
 
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
             JSONObject obj = new JSONObject(jsonString);
 
-            jsonArray = obj.getJSONArray("data");
+            jsonArray = obj.getJSONArray("");
 //            JSONObject headers = obj.getJSONObject("headers");
 //            String secureDate = headers.getString("Date");
 //            @SuppressWarnings("deprecation") long date = Date.parse(secureDate) / 1000;
