@@ -36,7 +36,7 @@
 
 
     <com.breadwallet.presenter.customviews.BRText
-        app:customFont="Celevenia.otf"
+        app:customFont="Nunito-Regular.ttf"
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
