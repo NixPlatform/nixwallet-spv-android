@@ -491,7 +491,7 @@
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">You last wrote down your paper key on %1$s</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">The most secure and safest way to use NIX.</string>
+  <string name="StartViewController.message">The most secure and safest way to use NIX on the go.</string>
   <!-- Support email adress & twitter -->
   <string name="Support.Title">Have questions or concerns?</string>
   <!-- Support email adress & twitter -->

@@ -110,8 +110,8 @@ public class DisplayCurrencyActivity extends BRActivity {
         CurrencyEntity entity = CurrencyDataSource.getInstance().getCurrencyByIso(iso);
         if (entity != null) {
             String finalExchangeRate = BRCurrency.getFormattedCurrencyString(DisplayCurrencyActivity.this, BRSharedPrefs.getIso(this), new BigDecimal(entity.rate));
-            boolean lites = BRSharedPrefs.getCurrencyUnit(this) == BRConstants.CURRENT_UNIT_LITES;
-            exchangeText.setText(BRCurrency.getFormattedCurrencyString(this, "LTC", new BigDecimal(lites ? 1000 : 1)) + " = " + finalExchangeRate);
+            boolean lites = BRSharedPrefs.getCurrencyUnit(this) == BRConstants.CURRENT_UNIT_LITECOINS;
+            exchangeText.setText(BRCurrency.getFormattedCurrencyString(this, "NIX", new BigDecimal(lites ? 1000 : 1)) + " = " + finalExchangeRate);
         }
         adapter.notifyDataSetChanged();
     }
