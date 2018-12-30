@@ -183,7 +183,7 @@ public class CurrencyFetchManager {
 
 
     public static JSONArray getJSonArray(Activity activity) {
-        String jsonString = callURL(activity, "https://litecoin.com/api/v1/rates");
+        String jsonString = callURL(activity, "https://nixapi.netabuse.net/exchanges/fiat");
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
