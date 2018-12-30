@@ -199,14 +199,14 @@ public class SettingsActivity extends BRActivity {
 
         items.add(new BRSettingsItem("NIX", "", null, true));
 
-        items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SettingsActivity.this, ShareDataActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-            }
-        }, false));
+//        items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SettingsActivity.this, ShareDataActivity.class);
+//                startActivity(intent);
+//                overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+//            }
+//        }, false));
         boolean eaEnabled = APIClient.getInstance().isFeatureEnabled(APIClient.FeatureFlags.EARLY_ACCESS.toString());
         if (eaEnabled)
             items.add(new BRSettingsItem(getString(R.string.Settings_earlyAccess), "", new View.OnClickListener() {

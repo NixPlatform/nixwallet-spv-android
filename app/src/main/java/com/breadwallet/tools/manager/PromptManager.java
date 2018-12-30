@@ -10,14 +10,14 @@ import com.breadwallet.presenter.activities.UpdatePitActivity;
 import com.breadwallet.presenter.activities.intro.WriteDownActivity;
 import com.breadwallet.presenter.activities.settings.FingerprintActivity;
 import com.breadwallet.presenter.activities.settings.SettingsActivity;
-import com.breadwallet.presenter.activities.settings.ShareDataActivity;
+//import com.breadwallet.presenter.activities.settings.ShareDataActivity;
 import com.breadwallet.tools.security.BRKeyStore;
 import com.breadwallet.wallet.BRPeerManager;
 
 import static com.breadwallet.tools.manager.PromptManager.PromptItem.FINGER_PRINT;
 import static com.breadwallet.tools.manager.PromptManager.PromptItem.PAPER_KEY;
 import static com.breadwallet.tools.manager.PromptManager.PromptItem.RECOMMEND_RESCAN;
-import static com.breadwallet.tools.manager.PromptManager.PromptItem.SHARE_DATA;
+//import static com.breadwallet.tools.manager.PromptManager.PromptItem.SHARE_DATA;
 import static com.breadwallet.tools.manager.PromptManager.PromptItem.UPGRADE_PIN;
 
 /**
@@ -63,7 +63,7 @@ public class PromptManager {
         UPGRADE_PIN,
         RECOMMEND_RESCAN,
         NO_PASSCODE,
-        SHARE_DATA
+//        SHARE_DATA
     }
 
     public class PromptInfo {
@@ -92,8 +92,8 @@ public class PromptManager {
                 return BRKeyStore.getPinCode(app).length() != 6;
             case RECOMMEND_RESCAN:
                 return BRSharedPrefs.getScanRecommended(app);
-            case SHARE_DATA:
-                return !BRSharedPrefs.getShareData(app) && !BRSharedPrefs.getShareDataDismissed(app);
+//            case SHARE_DATA:
+//                return !BRSharedPrefs.getShareData(app) && !BRSharedPrefs.getShareDataDismissed(app);
 
         }
         return false;
@@ -104,7 +104,7 @@ public class PromptManager {
         if (shouldPrompt(app, UPGRADE_PIN)) return UPGRADE_PIN;
         if (shouldPrompt(app, PAPER_KEY)) return PAPER_KEY;
         if (shouldPrompt(app, FINGER_PRINT)) return FINGER_PRINT;
-        if (shouldPrompt(app, SHARE_DATA)) return SHARE_DATA;
+//        if (shouldPrompt(app, SHARE_DATA)) return SHARE_DATA;
         return null;
     }
 
@@ -151,20 +151,20 @@ public class PromptManager {
                         }).start();
                     }
                 });
-            case SHARE_DATA:
-                return new PromptInfo("Share Anonymous Data", "Help improve NIX by sharing your anonymous data with us", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Intent intent = new Intent(app, ShareDataActivity.class);
-                                app.startActivity(intent);
-                                app.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
-                            }
-                        }).start();
-                    }
-                });
+//            case SHARE_DATA:
+//                return new PromptInfo("Share Anonymous Data", "Help improve NIX by sharing your anonymous data with us", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        new Thread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                Intent intent = new Intent(app, ShareDataActivity.class);
+//                                app.startActivity(intent);
+//                                app.overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+//                            }
+//                        }).start();
+//                    }
+//                });
 
         }
         return null;
@@ -190,8 +190,8 @@ public class PromptManager {
                 return "recommendRescanPrompt";
             case NO_PASSCODE:
                 return "noPasscodePrompt";
-            case SHARE_DATA:
-                return "shareDataPrompt";
+//            case SHARE_DATA:
+//                return "shareDataPrompt";
 
         }
         return null;
