@@ -39,8 +39,8 @@
     <item name="restore_gradient_start" type="color">#83afe0</item>
     <item name="restore_gradient_end" type="color">#767ee3</item>
 
-    <item name="import_gradient_start" type="color">#76b0fd</item>
-    <item name="import_gradient_end" type="color">#4C98FD</item>
+    <item name="import_gradient_start" type="color">#3E82E2</item>
+    <item name="import_gradient_end" type="color">#3F27BA</item>
 
     <item name="write_phrase_gradient_start" type="color">#D9FD5394</item>
     <item name="write_phrase_gradient_end" type="color">#FD5394</item>
