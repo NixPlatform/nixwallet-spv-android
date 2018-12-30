@@ -21,7 +21,7 @@ model {
                     create() {
                         type = "string"
                         name = "app_name"
-                        value = "NixWallet"
+                        value = "NIXWallet"
                     }
                 }
             }
@@ -31,7 +31,7 @@ model {
                     create() {
                         type = "string"
                         name = "app_name"
-                        value = "NixWallet-demo"
+                        value = "NIXWallet-demo"
                     }
                 }
             }

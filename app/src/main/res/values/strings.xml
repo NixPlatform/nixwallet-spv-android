@@ -495,7 +495,7 @@
   <!-- Support email adress & twitter -->
   <string name="Support.Title">Have questions or concerns?</string>
   <!-- Support email adress & twitter -->
-  <string name="Support.Message">Leave us a message at contact@nixplatform.io or tweet us @NixPlatform</string>
+  <string name="Support.Message">Leave us a message at development@nixplatform.io or tweet us @NixPlatform</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">Connecting</string>
   <!-- Syncing view header text -->
