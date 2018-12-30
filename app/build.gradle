@@ -7,7 +7,7 @@ model {
 
         defaultConfig {
             testInstrumentationRunner = 'android.support.test.runner.AndroidJUnitRunner'
-            applicationId = 'com.loafwallet'
+            applicationId = 'com.nixwallet'
             minSdkVersion.apiLevel = 23
             targetSdkVersion.apiLevel = 25
             versionCode = 49
@@ -16,22 +16,22 @@ model {
 
         productFlavors.with {
             create("loaf") {
-                applicationId "com.loafwallet"
+                applicationId "com.nixwallet"
                 resValues.with {
                     create() {
                         type = "string"
                         name = "app_name"
-                        value = "LoafWallet"
+                        value = "NixWallet"
                     }
                 }
             }
             create("demo") {
-                applicationId "com.loafdemo"
+                applicationId "com.nixdemo"
                 resValues.with {
                     create() {
                         type = "string"
                         name = "app_name"
-                        value = "LoafWallet-demo"
+                        value = "NixWallet-demo"
                     }
                 }
             }
