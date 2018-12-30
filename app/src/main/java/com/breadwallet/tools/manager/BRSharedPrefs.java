@@ -122,7 +122,7 @@ public class BRSharedPrefs {
 
     public static String getWalletName(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(BRConstants.PREFS_NAME, Context.MODE_PRIVATE);
-        return prefs.getString(BRConstants.WALLET_NAME, "My Loaf");
+        return prefs.getString(BRConstants.WALLET_NAME, "My NIX");
     }
 
     public static void putWalletName(Context ctx, String name) {

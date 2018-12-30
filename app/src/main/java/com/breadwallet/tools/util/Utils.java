@@ -231,7 +231,7 @@ public class Utils {
             }
         }
         String release = Build.VERSION.RELEASE;
-        return String.format(Locale.getDefault(), "%s/%d %s %s/%s", "loafwallet", versionNumber, cfnetwork, "Android", release);
+        return String.format(Locale.getDefault(), "%s/%d %s %s/%s", "nixwallet", versionNumber, cfnetwork, "Android", release);
     }
 
     public static String reverseHex(String hex) {
