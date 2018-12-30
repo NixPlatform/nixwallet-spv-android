@@ -3,7 +3,7 @@
   <!-- About screen bloglo label -->
   <string name="About.blog">Blog</string>
   <!-- About screen footer -->
-  <string name="About.footer">Made by the global Loaf team. Version %1$s.</string>
+  <string name="About.footer">Made by the NIX team. Version %1$s.</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Privacy Policy</string>
   <!-- About screen reddit label -->
@@ -201,7 +201,7 @@
   <!-- Jailbreak warning message -->
   <string name="JailbreakWarnings.messageWithBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access NIX\'s keychain data and steal your NIX! Wipe this wallet immediately and restore on a secure device.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access NIX\'s keychain data and steal your NIX. Please only use Loaf on a non-jailbroken device.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access NIX\'s keychain data and steal your NIX. Please only use NIX on a non-jailbroken device.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">WARNING</string>
   <!-- Wipe wallet button -->
