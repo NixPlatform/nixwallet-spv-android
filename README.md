@@ -1,8 +1,8 @@
-![ƀ](/images/icon.png) breadwallet for Android
+![ƀ](/images/icon.png) NIXWallet for Android
 ----------------------------------
 
 [![download](/images/icon-google-play.png)]
-(https://play.google.com/store/apps/details?id=com.breadwallet)
+(https://play.google.com/store/apps/details?id=com.nixwallet)
 
 ###bitcoin done right
 
