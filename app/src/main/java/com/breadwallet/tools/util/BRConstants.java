@@ -144,7 +144,7 @@ public class BRConstants {
     // or https://twitter.com/loafwallet
     public static final String TWITTER_LINK = "https://twitter.com/nixplatform";
     public static final String REDDIT_LINK = "https://www.reddit.com/r/nixplatform";
-    public static final String BLOG_LINK = "http://nixplatform.io";
+    public static final String BLOG_LINK = "https://medium.com/@nixplatform";
 
     public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "https://blockchain.nixplatform.io/tx/" :"https://blockchain.nixplatform.io/tx/";
 
