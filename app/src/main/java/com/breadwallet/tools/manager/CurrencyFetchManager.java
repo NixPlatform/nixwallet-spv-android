@@ -187,7 +187,9 @@ public class CurrencyFetchManager {
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
-            jsonArray = new JSONArray(jsonString);
+            //jsonArray = new JSONArray(jsonString);
+            JSONObject obj = new JSONObject(jsonString);
+            jsonArray = obj.getJSONArray("data");
         } catch (JSONException ignored) {
         }
         return jsonArray == null ? getBackUpJSonArray(activity) : jsonArray;
