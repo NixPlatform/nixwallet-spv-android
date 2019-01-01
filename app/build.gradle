@@ -10,7 +10,7 @@ model {
             applicationId = 'com.nixwallet'
             minSdkVersion.apiLevel = 23
             targetSdkVersion.apiLevel = 26
-            versionCode = 2
+            versionCode = 3
             versionName = "1.0.0"
         }
 
