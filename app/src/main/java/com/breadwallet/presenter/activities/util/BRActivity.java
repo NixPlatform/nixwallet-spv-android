@@ -111,7 +111,7 @@ public class BRActivity extends Activity {
                             else if (BRBitId.isBitId(result))
                                 BRBitId.signBitID(BRActivity.this, result, null);
                             else
-                                Log.e(TAG, "onActivityResult: not litecoin address NOR bitID");
+                                Log.e(TAG, "onActivityResult: not NIX address NOR bitID");
                         }
                     }, 500);
 

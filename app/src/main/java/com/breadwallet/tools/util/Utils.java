@@ -178,7 +178,7 @@ public class Utils {
     public static String createBitcoinUrl(String address, long satoshiAmount, String label, String message, String rURL) {
 
         Uri.Builder builder = new Uri.Builder();
-        builder = builder.scheme("litecoin");
+        builder = builder.scheme("nix");
         if (address != null && !address.isEmpty())
             builder = builder.appendPath(address);
         if (satoshiAmount != 0)
