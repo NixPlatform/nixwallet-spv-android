@@ -123,7 +123,7 @@ public class FragmentRequestAmount extends Fragment {
         mQrImage = (ImageView) rootView.findViewById(R.id.qr_image);
         shareButton = (BRButton) rootView.findViewById(R.id.share_button);
         shareEmail = (Button) rootView.findViewById(R.id.share_email);
-        shareTextMessage = (Button) rootView.findViewById(R.id.share_text);
+//        shareTextMessage = (Button) rootView.findViewById(R.id.share_text);
         shareButtonsLayout = (BRLinearLayoutWithCaret) rootView.findViewById(R.id.share_buttons_layout);
         close = (ImageButton) rootView.findViewById(R.id.close_button);
         keyboardIndex = signalLayout.indexOfChild(keyboardLayout);

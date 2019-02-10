@@ -96,7 +96,7 @@ public class FragmentReceive extends Fragment {
         signalLayout = (LinearLayout) rootView.findViewById(R.id.signal_layout);
         shareButton = (BRButton) rootView.findViewById(R.id.share_button);
         shareEmail = (Button) rootView.findViewById(R.id.share_email);
-        shareTextMessage = (Button) rootView.findViewById(R.id.share_text);
+//        shareTextMessage = (Button) rootView.findViewById(R.id.share_text);
         shareButtonsLayout = (BRLinearLayoutWithCaret) rootView.findViewById(R.id.share_buttons_layout);
         copiedLayout = (BRLinearLayoutWithCaret) rootView.findViewById(R.id.copied_layout);
         requestButton = (Button) rootView.findViewById(R.id.request_button);
