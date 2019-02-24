@@ -82,7 +82,7 @@ public class FragmentRequestAmount extends Fragment {
     private String receiveAddress;
     private BRButton shareButton;
     private Button shareEmail;
-    private Button shareTextMessage;
+//    private Button shareTextMessage;
     private boolean shareButtonsShown = true;
     private String selectedIso;
     private Button isoButton;
@@ -205,20 +205,20 @@ public class FragmentRequestAmount extends Fragment {
 
             }
         });
-        shareTextMessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                removeCurrencySelector();
-                if (!BRAnimator.isClickAllowed()) return;
-                showKeyboard(false);
-                String iso = selectedIso;
-                String strAmount = amountEdit.getText().toString();
-                BigDecimal bigAmount = new BigDecimal((Utils.isNullOrEmpty(strAmount) || strAmount.equalsIgnoreCase(".")) ? "0" : strAmount);
-                long amount = BRExchange.getSatoshisFromAmount(getActivity(), iso, bigAmount).longValue();
-                String bitcoinUri = Utils.createBitcoinUrl(receiveAddress, amount, null, null, null);
-                QRUtils.share("sms:", getActivity(), bitcoinUri);
-            }
-        });
+//        shareTextMessage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                removeCurrencySelector();
+//                if (!BRAnimator.isClickAllowed()) return;
+//                showKeyboard(false);
+//                String iso = selectedIso;
+//                String strAmount = amountEdit.getText().toString();
+//                BigDecimal bigAmount = new BigDecimal((Utils.isNullOrEmpty(strAmount) || strAmount.equalsIgnoreCase(".")) ? "0" : strAmount);
+//                long amount = BRExchange.getSatoshisFromAmount(getActivity(), iso, bigAmount).longValue();
+//                String bitcoinUri = Utils.createBitcoinUrl(receiveAddress, amount, null, null, null);
+//                QRUtils.share("sms:", getActivity(), bitcoinUri);
+//            }
+//        });
         shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

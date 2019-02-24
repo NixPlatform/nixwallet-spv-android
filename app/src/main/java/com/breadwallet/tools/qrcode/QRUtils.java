@@ -119,16 +119,16 @@ public class QRUtils {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse(via));
 
-        if (via.equalsIgnoreCase("sms:")) {
-            intent.putExtra("sms_body", bitcoinUri);
-            intent.putExtra("exit_on_sent", true);
-        } else {
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Litecoin Address");
+//        if (via.equalsIgnoreCase("sms:")) {
+//            intent.putExtra("sms_body", bitcoinUri);
+//            intent.putExtra("exit_on_sent", true);
+//        } else {
+            intent.putExtra(Intent.EXTRA_SUBJECT, "NIX Address");
             intent.putExtra(Intent.EXTRA_TEXT, bitcoinUri);
-        }
+//        }
         if (uri != null)
             intent.putExtra(Intent.EXTRA_STREAM, uri);
-        app.startActivity(Intent.createChooser(intent, "Litecoin Address"));
+        app.startActivity(Intent.createChooser(intent, "NIX Address"));
     }
 
     private static String saveToExternalStorage(Bitmap bitmapImage, Activity app) {
